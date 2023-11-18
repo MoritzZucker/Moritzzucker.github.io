@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="restaurant.css">
+    <title>Restaurant</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Restaurantname</a></li>
+                <li><a href="#menu">Menü</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#reservation">Tisch reservieren</a></li>
+                <li><a href="#contact">Kontakt/Anfahrt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Speisekarte</h2>
+
+        <div id="categories">
+            <button onclick="filterMenu('all')">Alle</button>
+            <button onclick="filterMenu('pizza')">Pizza</button>
+            <button onclick="filterMenu('burger')">Burger</button>
+            <button onclick="filterMenu('salad')">Salate</button>
+            <button onclick="filterMenu('pasta')">Nudeln</button>
+            <button onclick="filterMenu('german')">Deutsch</button>
+            <button onclick="filterMenu('asian')">Asiatisch</button>
+            <button onclick="filterMenu('dessert')">Dessert</button>
+            <button onclick="filterMenu('drinks')">Getränke</button>
+        </div>
+
+        <div id="menu-items">
+            <!-- Hier werden die Speisekarten-Elemente eingefügt -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Über uns</h2>
+        <p>Hier könnte eine kurze Beschreibung des Restaurants stehen.</p>
+    </section>
+
+    <section id="reservation">
+        <h2>Tisch reservieren</h2>
+        <p>Hier könnte das Formular für die Tischreservierung stehen.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt/Anfahrt</h2>
+        <p>Hier könnte die Kontaktinformation und eine Karte für die Anfahrt stehen.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Moritz Zucker</p>
+    </footer>
+
+    <script src="restaurant.js"></script>
+</body>
+</html>

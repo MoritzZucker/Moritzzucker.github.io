@@ -20,6 +20,14 @@
         </nav>
     </header>
 
+    <section id="start">
+        <h1>Restaurantname</h1>
+        <p>
+            <h3>Das könnte eine kurze Beschreibung des Restaurants sein.</h3>
+        </p>
+    </section>
+
+
     <section id="menu">
         <h2>Speisekarte</h2>
 
@@ -47,12 +55,33 @@
 
     <section id="reservation">
         <h2>Tisch reservieren</h2>
-        <p>Hier könnte das Formular für die Tischreservierung stehen.</p>
+        <form id="reservation-form" action="process_reservation.php" method="post">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <p>
+            <input type="tel" id="phone" name="phone" placeholder="Handynummer" required>
+            <p>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <p>
+            <input type="number" id="people" name="people" placeholder="Anzahl Personen" required>
+            <p>
+            <input type="date" id="date" name="date" required>
+            <p>
+            <input type="time" id="time" name="time" required>
+            <p>
+            <button type="submit">Reservieren</button>
+        </form>
     </section>
 
     <section id="contact">
         <h2>Kontakt/Anfahrt</h2>
-        <p>Hier könnte die Kontaktinformation und eine Karte für die Anfahrt stehen.</p>
+        <p>Sie können uns hier finden:</p>
+        <p>Ort</p>
+        <p>Straße</p>
+        <p>Telefonnummmer</p>
+        <p>Email</p>
+
+
+
     </section>
     
     <footer>

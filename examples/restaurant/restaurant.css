@@ -89,4 +89,21 @@ footer {
 .menu-item p {
     font-style: italic; /* Kursiver Text für die Beschreibung (optional) */
 }
-  
+
+
+#reservation {
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
+}
+
+#start {
+    text-align: center;
+    height: 600px;
+}

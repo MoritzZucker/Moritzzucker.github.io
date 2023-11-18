@@ -64,3 +64,4 @@ function filterMenu(category) {
     const filteredItems = category === 'all' ? menuItems : menuItems.filter(item => item.category === category);
     displayMenuItems(filteredItems);
 }
+

@@ -166,16 +166,13 @@ footer {
 
 
 #services {
-  height: 400px;
+  height: 1400px;
   padding: 20px;
   margin: 0;
   width: 100%;
   text-align: center;
 }
 
-th {
-  width: 120px;
-}
 
 .mid {
   text-align: center;
@@ -193,4 +190,66 @@ th {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
+}
+
+#web_design {
+  font-size: large;
+  height: 400px;
+  right: 10%;
+  align-items: center;
+  display: flex;
+}
+
+#web_design img{
+  position: absolute;
+  left: 10%;
+  border-radius: 20px;
+}
+
+#web_design p{
+  flex: 1;
+  text-align: center;
+  font-size: large;
+}
+
+#web_dev {
+  font-size: medium;
+  height: 400px;
+  left: 10%;
+  align-items: center;
+  display: flex;
+}
+
+#web_dev img{
+  position: absolute;
+  right: 10%;
+  border-radius: 20px;
+}
+
+#web_dev p{
+  flex: 1;
+  text-align: center;
+  font-size: large;
+  left: 10%;
+  margin-right: 25%;
+}
+
+#app_dev {
+  font-size: medium;
+  height: 400px;
+  right: 10%;
+  align-items: center;
+  display: flex;
+}
+
+#app_dev img{
+  position: absolute;
+  left: 10%;
+  border-radius: 20px;
+}
+
+#app_dev p{
+  flex: 1;
+  text-align: center;
+  font-size: large;
 }

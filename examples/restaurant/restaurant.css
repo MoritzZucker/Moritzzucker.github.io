@@ -106,6 +106,9 @@ footer {
 #start {
     text-align: center;
     height: 600px;
+    background-image: url("./pics/restaurant_room.jpeg");
+    background-attachment: scroll;
+    color: white;
 }
 
 #contact {

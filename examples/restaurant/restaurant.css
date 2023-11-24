@@ -35,7 +35,8 @@ nav a {
 
 section {
     padding: 20px;
-    width: 80%; /* Ändere die Breite nach Bedarf */
+    width: 80%;
+    /* Ändere die Breite nach Bedarf */
 }
 
 #categories {
@@ -45,25 +46,34 @@ section {
 #categories button {
     margin-right: 10px;
     cursor: pointer;
-    border: none; /* Keine Rahmen */
-    padding: 10px 20px; /* Innenabstand für Höhe und Breite des Buttons */
-    background: none; /* Keine Hintergrundfarbe */
-    font-weight: normal; /* Standardgewicht für den Text */
-    border-radius: 10px; /* Abgerundete Ecken */
+    border: none;
+    /* Keine Rahmen */
+    padding: 10px 20px;
+    /* Innenabstand für Höhe und Breite des Buttons */
+    background: none;
+    /* Keine Hintergrundfarbe */
+    font-weight: normal;
+    /* Standardgewicht für den Text */
+    border-radius: 10px;
+    /* Abgerundete Ecken */
     font-size: medium;
 }
 
 #categories button.active {
-    color: black; /* Textfarbe, wenn der Button ausgewählt ist */
-    font-weight: bold; /* Fettdruck für den ausgewählten Button */
-    background-color: black; /* Hintergrundfarbe für den ausgewählten Button */
-    
+    color: black;
+    /* Textfarbe, wenn der Button ausgewählt ist */
+    font-weight: bold;
+    /* Fettdruck für den ausgewählten Button */
+    background-color: black;
+    /* Hintergrundfarbe für den ausgewählten Button */
+
 }
 
 #menu-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Zentriere die Elemente horizontal */
+    justify-content: space-around;
+    /* Zentriere die Elemente horizontal */
 }
 
 .menu-item {
@@ -74,6 +84,7 @@ section {
     background-color: #f0f0f0;
     border-radius: 20px;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -81,13 +92,16 @@ footer {
     padding: 1em 0;
     bottom: 0;
     width: 100%;
-  }
-  .menu-item h3, .menu-item p {
+}
+
+.menu-item h3,
+.menu-item p {
     margin: 10px 0;
 }
 
 .menu-item p {
-    font-style: italic; /* Kursiver Text für die Beschreibung (optional) */
+    font-style: italic;
+    /* Kursiver Text für die Beschreibung (optional) */
 }
 
 

@@ -1,139 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webentwickler Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-
-
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Buttons with Icons</title>
 </head>
 
 <body>
     <header>
-        <div class="navbar">
-            <a href="#">Moritz Zucker</a>
-            <a href="#contact">Kontakt</a>
-            <a href="#projects">Projekte</a>
-            <a href="#services">Services</a>
-            <a href="#about">Über mich</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Moritz Zucker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="#about">Über mich</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#portfolio">Projekte</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#services">Services</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#contact">Kontakt</a> </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-    <!--Front Page Begin-->
-    <section id="front_container">
-        <h1 id="front_headline">Moritz Zucker</h1>
-        <div class="typing-container">
-            <span id="job-title"></span>
-            <script src="index.js"></script>
-        </div>
-    </section>
-
-
-    <!--Front Page End-->
-
-    <section id="about">
-        <h2>Über mich</h2>
-        <p>Ich bin ein Student im Informatikstudium mit Erfahrung in vielen Programmiersprachen.</p>
-        <button class="btn"><i class="fa fa-download"></i> Download Lebenslauf</button>
-    </section>
-
-
-    <section id="services">
-        <h2>Meine Services</h2>
-
-        <div id="web_design">
-            <img src="./pics/web-design.jpg" height="350px" width=auto>
-            <p>Ich Designe Ihnen eine von Grund auf neue Website, </br>ganz nach Ihren Ansprüchen</p>
-        </div>
-
-
-
-        <div id="web_dev">
-            <p>Ich programmiere oder ändere schon </br>vorhandene Webseiten</p>
-            <img src="./pics/code.jpg" height="350px" width=auto>
-        </div>
-
-
-
-        <div id="app_dev">
-            <p>Ich programmiere auch Apps</p>
-            <img src="./pics/app_dev.png" height="350px" width=auto>
-        </div>
-        <td></td>
-        <td></td>
-
-    </section>
-
-    <section id="projects">
-        <h2 class="mid">Meine Projekte</h2>
-        <div class="projects_gallery">
-            <a target="_blank" href="https://github.com/JulianTeschner/CasinoIP2">
-                <img src="./pics/app.PNG" alt="Cinque Terre" width="300" height="500">
-            </a>
-            <div class="desc">
-                <h3>Casino Website</h3>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Über mich</h2>
+                <p>I am a professional web and app developer with a strong background in programming languages such as
+                    HTML, CSS, JavaScript, Python, and PHP. I specialize in developing high-performance and
+                    user-friendly websites and applications. With a proven track record of delivering exceptional work,
+                    I am confident in my ability to excel in any web development project.</p>
+                    <a href="path/to/your/cv.pdf" download="your-cv-filename"
+                    style="text-align: center; display: block; margin: 0 auto; padding: 10px 20px; font-size: 18px; color: white; background-color: #007bff; text-decoration: none; border-radius: 10px; width: 15%;">
+                    Download Lebenslauf</a>
             </div>
-
-        </div>
-
-        <div class="projects_gallery">
-            <a target="_blank" href="https://play.google.com/store/apps/details?id=test.breakout_multiplayer">
-                <img src="./pics/game.png" alt="Cinque Terre" width="300" height="500">
-            </a>
-            <div class="desc">
-                <h3>Brick Brawl</h3>
-                <p>Mobile Game</p>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <div class="d-flex justify-content-center" style="border-top: 10px solid black; margin-top: 20px; width: 100%; border-radius: 10px;"></div>
+                <h2>Projekte</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card"> <img src="./pics/scaled/restaurant.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurant Website</h5>
+                                <p class="card-text">Demoseite für ein Restaurant</p> <a href="./examples/restaurant/malaga.html"
+                                    class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="./pics/scaled/app.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fitness App</h5>
+                                <p class="card-text">Verwaltung von Fitnessstudios</p> <a href="https://docs.google.com/document/d/1rrr7jsDr8fyTUMrRKlcw5RwOvJT5G3P7xt-mlLRDHD4/edit?usp=sharing"
+                                    class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="./pics/game.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Brick Brawl</h5>
+                                <p class="card-text">Breakout Spiel für Handy und Tablet</p> <a href="https://play.google.com/store/apps/details?id=test.breakout_multiplayer"
+                                    class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <div class="d-flex justify-content-center" style="border-top: 10px solid black; margin-top: 20px; width: 100%; border-radius: 10px;"></div>
 
-        <div class="projects_gallery">
-            <a target="_blank" href="https://docs.google.com/document/d/1rrr7jsDr8fyTUMrRKlcw5RwOvJT5G3P7xt-mlLRDHD4/edit">
-                <img src="./pics/app.PNG" alt="Cinque Terre" width="300" height="500">
-            </a>
-            <div class="desc">
-                <h3>Fitness App</h3>
-                <p>App zur Verwaltung von Fitnessstudios</p>
+                <h2>Services</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./pics/scaled/web-design (1).jpg" alt="Web Design" class="img-fluid">
+                        <h3>Web Design</h3>
+                        <p>Ich Designe Ihnen eine von Grund auf neue Website,
+                            ganz nach Ihren Ansprüchen</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./pics/scaled/code (1).jpg" alt="Web Developer" class="img-fluid">
+                        <h3>Web Developer</h3>
+                        <p>Ich programmiere oder ändere schon
+                            vorhandene Webseiten</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./pics/scaled/app_dev (1).png" alt="App Developer" class="img-fluid">
+                        <h3>App Developer</h3>
+                        <p>Ich programmiere auch Apps</p>
+
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="d-flex justify-content-center" style="border-top: 10px solid black; margin-top: 20px; width: 100%; border-radius: 10px;"></div>
+                <h2>Kontakt</h2>
+                <p>Nehmen Sie gerne Kontakt mit mir auf!</p>
+                <form action="contact.php" method="post">
+                    <div class="form-group"> <label for="name">Name</label> <input type="text" class="form-control"
+                            id="name" placeholder="Name" required> </div>
+                    <div class="form-group"> <label for="email">Email</label> <input type="email" class="form-control"
+                            id="email" placeholder="Email" required> </div>
+                    <div class="form-group"> <label for="message">Nachricht</label> <textarea class="form-control"
+                            id="message" rows="4" placeholder="Nachricht" required></textarea> </div> <button
+                        type="submit" class="btn btn-primary">Senden</button>
+                </form>
 
-        <div class="projects_gallery">
-            <a target="_blank" href="./examples/restaurant/restaurant.html">
-                <img src="./pics/restaurant.PNG" alt="Cinque Terre" width="300" height="500">
-            </a>
-            <div class="desc">
-                <h3>restaurant Website</h3>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" style="margin: 10px;">
+                        <a href="https://www.linkedin.com/in/moritz-zucker-9932a11a9/" style="color: white;"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                    </button>
+                    <button type="button" class="btn btn-primary" style="margin: 10px;">
+                        <a href="https://github.com/MoritzZucker" style="color: white;"><i class="fa fa-github"></i> GitHub</a>
+                    </button>
+                    <button type="button" class="btn btn-primary" style="margin: 10px;">
+                        <a href="https://www.xing.com/profile/Moritz_Zucker" style="color: white;"><i class="fa fa-xing"></i> Xing</a>
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Hier kannst du mich kontaktieren: [Deine Kontaktdaten]</p>
-        <button id="contact_btn" onclick="window.location.href ='https://www.linkedin.com/in/moritz-zucker-9932a11a9/';">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg>
-            LinkedIn
-        </button>
-        <button id="contact_btn" onclick="window.location.href ='https://github.com/MoritzZucker';">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-              </svg>
-              Github
-        </button>
-        <button id="contact_btn" onclick="window.location.href ='https://www.xing.com/profile/Moritz_Zucker/cv?expandNeffi=true';">
-            <svg src="./pics/xing.svg" width="16" height="16" ></svg>
-              Xing
-        </button>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Moritz Zucker</p>
-    </footer>
+        </section>
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 Moritz Zucker. All rights reserved.</p>
+            </div>
+        </footer>
 
 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script> // When the user scrolls down 20px from the top of the document, show the button window.onscroll = function() {scrollFunction()}; function scrollFunction() { if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { document.getElementById("myBtn").style.display = "block"; } else { document.getElementById("myBtn").style.display = "none"; } } // When the user clicks on the button, scroll to the top of the document function topFunction() { document.body.scrollTop = 0; // For Safari document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera } </script>
+
+    </main>
 </body>
 
 </html>

@@ -51,7 +51,7 @@ function displayMenuItems(items) {
         const menuItem = document.createElement('div');
         menuItem.className = 'menu-item';
         menuItem.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" height="250px" width=auto>
+            <img src="${item.image}" alt="${item.name}" height="230px" width=auto>
             <h3>${item.name}</h3>
             <p>${item.description}</p>
             <p>Preis: $${item.price}</p>

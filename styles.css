@@ -44,9 +44,71 @@ body {
     text-align: center;
     color: #333;
 }
+
 footer {
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
 }
 
+#home {
+    color: #fff;
+    background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(./pics/background.svg);
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.home_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%;
+}
+
+.home_content_headline {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.home_conent_info {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+
+}
+
+#about,
+#portfolio,
+#services,
+#contact {
+    margin-bottom: 5%;
+}
+
+.headline_middle {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.cv {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 10%;
+}

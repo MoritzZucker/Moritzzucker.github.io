@@ -79,3 +79,6 @@ footer {
     text-align: center;
 }
 
+#carouselExample, #about, #menu, #reservation {
+    margin-bottom: 5%;
+}

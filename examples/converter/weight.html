@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gewicht Umrechner</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="./../../index.html">Moritz Zucker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="./temperatur.html">Temperatur</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="./lenght.html">Längeneinheiten</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="./weight.html">Gewicht</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1>Gewichtsrechner</h1>
+    <div class="container">
+        
+            <input type="number" id="gewicht" step="0.01" placeholder="Gewicht">
+            <label for="von">Von:</label>
+            <select id="von" name="von">
+                <option value="kg">Kilogramm</option>
+                <option value="g">Gramm</option>
+                <option value="lb">Pfund</option>
+                <option value="oz">Unze</option>
+            </select>
+        
+        
+            <label for="nach">Nach:</label>
+            <select id="einheit">
+                <option value="kg">Kilogramm</option>
+                <option value="g">Gramm</option>
+                <option value="lb">Pfund</option>
+                <option value="oz">Unze</option>
+            </select>
+        <button type="submit"btn onclick="umrechnen()">Umrechnen</button>
+        <p id="ergebnis"></p>
+    </div>
+
+
+    <script>
+        function umrechnen() {
+            var gewicht = parseFloat(document.getElementById("gewicht").value);
+            var von = document.getElementById("von").value;
+            var einheit = document.getElementById("einheit").value;
+            var ergebnis = 0;
+
+            switch (von) {
+                case "kg":
+                    ergebnis = gewicht;
+                    break;
+                case "g":
+                    ergebnis = gewicht / 1000;
+                    break;
+                case "lb":
+                    ergebnis = gewicht / 2.20462;
+                    break;
+                case "oz":
+                    ergebnis = gewicht / 35.274;
+                    break;
+            }
+
+            switch (einheit) {
+                case "kg":
+                    ergebnis = ergebnis;
+                    break;
+                case "g":
+                    ergebnis = ergebnis * 1000;
+                    break;
+                case "lb":
+                    ergebnis = ergebnis * 2.20462;
+                    break;
+                case "oz":
+                    ergebnis = ergebnis * 35.274;
+                    break;
+            }
+
+            document.getElementById("ergebnis").textContent = "Umgerechnetes Gewicht: " + ergebnis.toFixed(4) + " " + einheit;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maßeinheiten Umrechner</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="./../../index.html">Moritz Zucker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="./temperatur.html">Temperatur</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="./lenght.html">Längeneinheiten</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="./weight.html">Gewicht</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1>Maßeinheiten Umrechner</h1>
+    <div class="container">
+        <input type="number" id="wert" name="wert" placeholder="Länge" required>
+        
+        <label for="von">Von:</label>
+        <select id="von" name="von">
+            <option value="mm">Millimeter</option>
+            <option value="cm">Zentimeter</option>
+            <option value="dm">Dezimeter</option>
+            <option value="m">Meter</option>
+            <option value="km">Kilometer</option>
+            <option value="in">Zoll</option>
+            <option value="ft">Fuß</option>
+            <option value="yd">Yard</option>
+            <option value="mi">Meile</option>
+        </select>
+        
+        <label for="nach">Nach:</label>
+        <select id="nach" name="nach">
+            <option value="mm">Millimeter</option>
+            <option value="cm">Zentimeter</option>
+            <option value="dm">Dezimeter</option>
+            <option value="m">Meter</option>
+            <option value="km">Kilometer</option>
+            <option value="in">Zoll</option>
+            <option value="ft">Fuß</option>
+            <option value="yd">Yard</option>
+            <option value="mi">Meile</option>
+        </select>
+        
+        <button type="submit">Umrechnen</button>
+        <span id="error"></span>
+        <div id="ergebnis"></div>
+    </div>
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const wert = document.getElementById("wert").value;
+            const von = document.getElementById("von").value;
+            const nach = document.getElementById("nach").value;
+            
+            if (wert === "" || von === nach) {
+                document.getElementById("error").textContent = "Bitte geben Sie einen Wert ein und wählen Sie verschiedene Einheiten.";
+                return;
+            }
+            
+            document.getElementById("error").textContent = "";
+            
+            const faktor = {
+                "mm": 1,
+                "cm": 10,
+                "dm": 100,
+                "m": 1000,
+                "km": 1000000,
+                "in": 25.4,
+                "ft": 304.8,
+                "yd": 914.4,
+                "mi": 1609344
+            };
+            
+            const ergebnis = (wert * faktor[von]) / faktor[nach];
+            
+            document.getElementById("ergebnis").innerHTML = `Umgerechneter Wert: ${ergebnis.toFixed(6)} ${nach}`;
+        });
+    </script>
+</body>
+</html>

@@ -64,6 +64,10 @@
     background-color: #555;
   }
   
+  nav ul li a.current {
+    color: #ca0808;
+  }
+  
   nav ul li:last-child a {
     border-right: none;
   }

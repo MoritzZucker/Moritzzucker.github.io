@@ -29,7 +29,9 @@ body {
     background-color: #111;
    }
    
-
+   nav ul li a.current {
+    color: #ca0808;
+  }
    
    header img {
     width: 100%;

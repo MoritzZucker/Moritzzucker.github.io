@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadtorchester</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            setInterval(function() {
+                var $sponsorLogos = $('#section4 .sponsor-logos');
+                var $firstLogo = $sponsorLogos.find('img:first');
+                $sponsorLogos.animate({marginLeft: '-='+$firstLogo.width()}, 1000, function() {
+                    $firstLogo.remove().appendTo($sponsorLogos);
+                    $sponsorLogos.css('margin-left', 0);
+                });
+            }, 3000);
+        });
+        </script>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./chronik.html">Chronik</a>
+        <a href="./downloads.html">Downloads</a>
+    </nav>
+
+    <section id="downloads">
+        <div class="container">
+            Hier kann man verschiedne Informationen finden für den Mitgliegsbeitritt usw
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <h2>Abboniere unser Newsletter</h2>
+            <form action="https://yourwebsite.com/newsletter-signup" method="post">
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p>&copy; 2024 Moritz Zucker</p>
+            <a href="./Impressum.html">Impressum</a>
+        </div>
+    </footer>
+</body>
+</html>

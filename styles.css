@@ -105,12 +105,18 @@ footer {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
-    font-size: 18px;
     color: white;
     background-color: #007bff;
     text-decoration: none;
     border-radius: 10px;
     width: 30%;
+    margin-top: 10%;
+}
+.btn-primary{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
     margin-top: 10%;
 }
 

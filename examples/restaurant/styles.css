@@ -82,3 +82,10 @@ footer {
 #carouselExample, #about, #menu, #reservation {
     margin-bottom: 5%;
 }
+
+.carousel-image {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+

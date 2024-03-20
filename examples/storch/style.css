@@ -96,3 +96,12 @@ section {
     margin: 20px 0;
 }
 
+.carousel-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#carouselExample {
+    height: 900px;
+}

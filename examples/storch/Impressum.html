@@ -3,13 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3bdc2ff8-ee28-4e88-8388-ffacd6c36473" data-blockingmode="auto" type="text/javascript"></script></head>
 
 <body>
+    <div id="banner">
+        <img src="./pics/banner.PNG" alt="Stadtorchester Banner" >
+    </div>
     <header>
         <nav>
             <a href="./index.html">Home</a>
@@ -17,24 +20,47 @@
             <a href="./downloads.html">Downloads</a>
         </nav>
     <main>
-       <h1>Impressum</h1>
-       <script id="CookieDeclaration" src="https://consent.cookiebot.com/3bdc2ff8-ee28-4e88-8388-ffacd6c36473/cd.js" type="text/javascript" async></script>        <h2>Vorstandschaft und Geschäftsbereiche</h2>
-        <p>Infos</p>
-        <h2>Kontakt</h2>
-        <p>Kontaktformular</p>
+        <div class="container">
+             <h1>Impressum</h1>
+            <script id="CookieDeclaration" src="https://consent.cookiebot.com/3bdc2ff8-ee28-4e88-8388-ffacd6c36473/cd.js" type="text/javascript" async></script>        
+            <h2>Vorstandschaft und Geschäftsbereiche</h2>
+            <p>1. Vorsitzender: Markus Hoffmann</p>
+            <p>2. Vorsitzende: Sylvia Kaller</p>
+            <p></p>
+            <p>Team Musik</p>
+            <p>Team Marketing</p>
+            <p>...</p>
+            <h2>Adresse</h2>
+            <p>Markus Hoffmann</p>
+            <p>Antonia-Visconti-Straße 37</p>
+            <p>74321 Bietighim-Bissingen</p>
+            <h2>Kontakt</h2>
+            <form class="cf">
+            <div class="half left cf">
+                <input type="text" id="input-name" placeholder="Name">
+                <input type="email" id="input-email" placeholder="Email Adresse">
+                <input type="text" id="input-subject" placeholder="Thema">
+            </div>
+            <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="Nachricht"></textarea>
+            </div>  
+            <input type="submit" value="Senden" id="input-submit">
+            </form>
+        </div>
+      
        
 
         <footer>
             <div class="container">
-                <h2>Aboniere unser Newsletter</h2>
-                <form action="https://yourwebsite.com/newsletter-signup" method="post">
-                    <input type="email" name="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-                <p>&copy; 2024 Moritz Zucker</p>
-                <a href="./Impressum.html">Impressum</a>
+              <h4>Abonniere unser Newsletter</h4>
+              <form action="https://yourwebsite.com/newsletter-signup" method="post">
+                <input type="email" name="email" placeholder="Email Adresse" required>
+                <button type="submit">Abonnieren</button>
+              </form>
+              <p><a href="./Impressum.html">Impressum</a></p>
+              <p class="copyright">&copy; 2024 Moritz Zucker</p>
             </div>
-        </footer>
+          </footer>
 
         <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

@@ -1,243 +1,435 @@
+<!DOCTYPE html>
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Moritz Zucker – IT-Consultant &amp; Software-Developer</title>
+    <meta name="description"
+        content="Moritz Zucker – IT-Consultant bei ATOSS Software SE in Stuttgart. Informatiker mit Fokus auf Web-, App- und Backend-Entwicklung sowie IT-Security.">
+    <meta name="author" content="Moritz Zucker">
+    <meta name="theme-color" content="#07070c">
+    <meta name="color-scheme" content="dark">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Moritz Zucker – IT-Consultant &amp; Software-Developer">
+    <meta property="og:description"
+        content="IT-Consultant in Stuttgart. Web-, App- und Backend-Entwicklung, Schnittstellen und sichere IT-Konzepte.">
+    <meta property="og:url" content="https://moritzzucker.github.io/">
+    <meta property="og:image" content="https://moritzzucker.github.io/pics/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2300d4ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EMZ%3C/text%3E%3C/svg%3E">
+    <link rel="preload" href="./fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3bdc2ff8-ee28-4e88-8388-ffacd6c36473" data-blockingmode="auto" type="text/javascript"></script>    </header>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Moritz Zucker",
+        "jobTitle": "IT-Consultant",
+        "worksFor": { "@type": "Organization", "name": "ATOSS Software SE" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Stuttgart", "addressCountry": "DE" },
+        "url": "https://moritzzucker.github.io/",
+        "sameAs": [
+            "https://www.linkedin.com/in/moritz-zucker-9932a11a9/",
+            "https://github.com/MoritzZucker",
+            "https://www.xing.com/profile/Moritz_Zucker"
+        ]
+    }
+    </script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3bdc2ff8-ee28-4e88-8388-ffacd6c36473"
+        data-blockingmode="auto" type="text/javascript"></script>
 </head>
 
 <body>
-    <header>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
+    <!-- Icon-Sprite -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3" />
+        </symbol>
+        <symbol id="i-xing" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M18.19 0c-.5 0-.72.31-.9.64 0 0-7.21 12.79-7.45 13.21l4.75 8.71c.17.3.42.64.92.64h3.35c.2 0 .36-.08.44-.21.09-.14.09-.32 0-.5l-4.71-8.6a.02.02 0 0 1 0-.02L22 .71c.09-.18.09-.36 0-.5-.08-.13-.24-.21-.44-.21h-3.37zM4.08 4.6c-.2 0-.36.07-.44.2-.09.14-.07.31.01.49l2.27 3.93v.02L2.35 15.5c-.1.17-.09.35 0 .49.08.13.22.22.42.22h3.36c.5 0 .74-.34.91-.65l3.6-6.37-2.29-4c-.17-.29-.42-.6-.93-.6H4.08z" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M7 17 17 7M8 7h9v9" />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14" />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm-1 1 9 7 9-7" />
+        </symbol>
+        <symbol id="i-send" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" />
+        </symbol>
+    </svg>
+
+    <header class="nav" id="top">
+        <div class="nav__inner">
+            <a class="nav__logo" href="#top" aria-label="Moritz Zucker – nach oben">
+                <span class="nav__logo-mark">MZ</span>
+                <span class="nav__logo-text">Moritz Zucker</span>
+            </a>
+            <nav class="nav__links" id="nav-links" aria-label="Hauptnavigation">
+                <a href="#about">Über mich</a>
+                <a href="#journey">Werdegang</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projekte</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+            <a class="btn btn--small btn--ghost nav__cta" href="./docs/Lebenslauf Moritz Zucker.pdf"
+                download="Lebenslauf Moritz Zucker">
+                <svg class="icon"><use href="#i-download" /></svg> Lebenslauf
+            </a>
+            <button class="nav__toggle" type="button" aria-controls="nav-links" aria-expanded="false"
+                aria-label="Menü öffnen">
+                <span></span><span></span>
+            </button>
+        </div>
     </header>
-    <main>
-        <section id="home">
-            <div class="home_content">
-                <h1 class="home_content_headline">Hallo, ich bin Moritz Zucker</h1>
-                <!--<p class="home_conent_info">Ein auf Frontend fokussierter Webentwickler, der das Frontend von Websites
-                    und Webanwendungen erstellt, um den Erfolg des gesamten Produkts zu gewährleisten.</p> -->
-                <div class="typewriter">
-                    <span class="typewriter-text"></span>
-                    <span class="cursor">|</span>
-                </div>
 
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero__bg" aria-hidden="true">
+                <div class="blob blob--1"></div>
+                <div class="blob blob--2"></div>
+                <div class="blob blob--3"></div>
+                <div class="hero__grid"></div>
             </div>
-        </section>
-        <section id="about">
-            <div class="container">
-                <h1 class="headline_middle">Über mich</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Lernen Sie mich kennen</h2>
-                        <h5>Seit Mai 2024 arbeite ich als IT-Consultant bei ATOSS Software SE in Stuttgart und unterstütze Unternehmen dabei, 
-                            individuelle IT-Lösungen effizient umzusetzen. Zuvor habe ich im März 2024 mein Informatikstudium erfolgreich abgeschlossen. 
-                            Während des Studiums konnte ich umfassende Kenntnisse in den Bereichen Web-Entwicklung, Web-Design, App-Entwicklung, Backend-Programmierung sowie IT-Security erwerben. 
-                            Heute kombiniere ich dieses technische Fundament mit praktischer Projekterfahrung, um Prozesse zu optimieren, Schnittstellen zu entwickeln und sichere, zukunftsfähige IT-Konzepte zu gestalten.
-                        </h5>
-                        <a class="btn btn-primary" href="./docs/Lebenslauf Moritz Zucker.pdf" download="Lebenslauf Moritz Zucker">
-                            Kompletter Lebenslauf</a>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Meine Skills</h2>
 
-                        <div class="skills-list">
-                            <div class="skill">HTML</div>
-                            <div class="skill">CSS</div>
-                            <div class="skill">PHP</div>
-                            <div class="skill">JavaScript</div>
-                            <div class="skill">SQL</div>
-                            <div class="skill">Java</div>
-                            <div class="skill">React</div>
-                            <div class="skill">Node</div>
-                            <div class="skill">Python</div>
-                            <div class="skill">C</div>
-                            <div class="skill">C#</div>
-                            <div class="skill">C++</div>
-                            <div class="skill">Dart</div>
-                            <div class="skill">Flutter</div>
-                            <div class="skill">React Native</div>
-                            <div class="skill">Compiler</div>
-                            <div class="skill">Consulting</div>                            
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--
-        <section id="portfolio">
-            <div class="container">
-
-                <h1 class="headline_middle">Projekte</h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card"> <img src="./pics/scaled/restaurant.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Restaurant Website</h5>
-                                <p class="card-text">Demoseite für ein Restaurant</p> <a
-                                    href="./examples/restaurant/restaurant.html" class="btn btn-primary">Projekt
-                                    ansehen</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card"> <img src="./pics/scaled/app.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Fitness App</h5>
-                                <p class="card-text">Verwaltung von Fitnessstudios</p> <a
-                                    href="https://docs.google.com/document/d/1rrr7jsDr8fyTUMrRKlcw5RwOvJT5G3P7xt-mlLRDHD4/edit?usp=sharing"
-                                    class="btn btn-primary">Projekt ansehen</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card"> <img src="./pics/game.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Brick Brawl</h5>
-                                <p class="card-text">Breakout Spiel für Handy und Tablet</p> <a
-                                    href="https://play.google.com/store/apps/details?id=test.breakout_multiplayer"
-                                    class="btn btn-primary">Projekt ansehen</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card"> <img src="./pics/casino.PNG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Casino</h5>
-                                <p class="card-text">Casino Website mit verschiedenen Spielen wie Blackjack,
-                                    Slotmaschine usw.</p> <a href="https://github.com/JulianTeschner/CasinoIP2"
-                                    class="btn btn-primary">Projekt ansehen</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card"> <img src="./pics/temp.PNG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Universal Rechner</h5>
-                                <p class="card-text">Wandelt Temperaturen, Maßeinheiten und Gewichtseinheiten um</p> <a
-                                    href="./examples/converter/temperatur.html" class="btn btn-primary">Projekt
-                                    ansehen</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
--->
-
-        <section id="cards">
-            <div class="container">
-                <h1 class="headline_middle">Meine Projekte</h1>
-                 <!--
-                    <a href="./examples/restaurant/restaurant.html" onclick="redirectToPage(event, './examples/restaurant/restaurant.html')">
-                        <div class="cover atvImg">
-                            <div class="atvImg-layer" data-img="./pics/restaurant.jpg"></div>
-                            <div class="atvImg-layer" data-img="./pics/restaurant.jpg"></div>
-                        </div>
+            <div class="container hero__content">
+                <p class="badge reveal">
+                    <span class="badge__dot"></span>
+                    IT-Consultant bei ATOSS Software SE · Stuttgart
+                </p>
+                <h1 class="hero__title reveal">
+                    Hallo, ich bin<br>
+                    <span class="gradient-text">Moritz Zucker</span>
+                </h1>
+                <p class="hero__role reveal" aria-live="polite">
+                    <span class="hero__role-prefix">&gt;</span>
+                    <span class="typewriter-text">IT-Consultant</span><span class="cursor" aria-hidden="true"></span>
+                </p>
+                <p class="hero__lead reveal">
+                    Ich verbinde ein solides Informatik-Fundament mit Praxiserfahrung aus der Beratung –
+                    für optimierte Prozesse, saubere Schnittstellen und sichere, zukunftsfähige IT-Lösungen.
+                </p>
+                <div class="hero__actions reveal">
+                    <a class="btn btn--primary magnetic" href="#projects">
+                        Projekte ansehen <svg class="icon"><use href="#i-arrow" /></svg>
                     </a>
-                -->
-            
-                <a href="https://docs.google.com/document/d/1rrr7jsDr8fyTUMrRKlcw5RwOvJT5G3P7xt-mlLRDHD4/edit?usp=sharing">
-                    <div class="cover atvImg">
-                        <div class="atvImg-layer" data-img="./pics/gym.jpg"></div>
-                        <div class="atvImg-layer" data-img="./pics/gym.jpg"></div>
-                    </div>
-                </a>
-            
-                <a href="https://github.com/JulianTeschner/CasinoIP2" >
-                    <div class="cover atvImg">
-                        <div class="atvImg-layer" data-img="./pics/casino.jpg"></div>
-                        <div class="atvImg-layer" data-img="./pics/casino.jpg"></div>
-                    </div>
-                </a>
-            </div>        
-        </section>
-        <!--
-         <section id="services">
-            <div class="container">
-
-
-                <h1 class="headline_middle">Services</h1>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="./pics/scaled/web-design (1).jpg" alt="Web Design" class="img-fluid">
-                        <h3>Web Design</h3>
-                        <p>Ich Designe Ihnen eine von Grund auf neue Website,
-                            ganz nach Ihren Ansprüchen</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./pics/scaled/code (1).jpg" alt="Web Developer" class="img-fluid">
-                        <h3>Web Developer</h3>
-                        <p>Ich programmiere oder ändere schon
-                            vorhandene Webseiten</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./pics/scaled/app_dev (1).png" alt="App Developer" class="img-fluid">
-                        <h3>App Developer</h3>
-                        <p>Ich programmiere auch Apps</p>
-
-                    </div>
+                    <a class="btn btn--ghost magnetic" href="#contact">
+                        <svg class="icon"><use href="#i-mail" /></svg> Kontakt aufnehmen
+                    </a>
                 </div>
+                <ul class="socials reveal" aria-label="Soziale Netzwerke">
+                    <li><a href="https://www.linkedin.com/in/moritz-zucker-9932a11a9/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin" /></svg></a></li>
+                    <li><a href="https://github.com/MoritzZucker" target="_blank" rel="noopener"
+                            aria-label="GitHub"><svg class="icon"><use href="#i-github" /></svg></a></li>
+                    <li><a href="https://www.xing.com/profile/Moritz_Zucker" target="_blank" rel="noopener"
+                            aria-label="Xing"><svg class="icon"><use href="#i-xing" /></svg></a></li>
+                </ul>
             </div>
-        </section>    
-        -->
-       
-        <section id="contact">
+
+            <a class="scroll-hint" href="#about" aria-label="Nach unten scrollen">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node</span>
+                <span>PHP</span><span>SQL</span><span>Java</span><span>Python</span><span>C</span><span>C#</span>
+                <span>C++</span><span>Dart</span><span>Flutter</span><span>React Native</span><span>Compiler</span>
+                <span>Consulting</span>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
             <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">01 — Über mich</span>
+                    <h2 class="section__title">Lernen Sie mich <span class="gradient-text">kennen</span></h2>
+                </header>
 
-                <h1 class="headline_middle">Kontakt</h1>
-                <form action="https://formspree.io/f/xrgwwbop" method="post">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" name="name" id="full-name" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Nachricht</label>
-                        <textarea class="form-control" id="message" rows="4" name="message" placeholder="Nachricht"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Senden</button>
-                </form>
+                <div class="bento">
+                    <article class="card card--lg spotlight reveal">
+                        <h3>Vom Code zur Beratung</h3>
+                        <p>
+                            Seit Mai 2024 arbeite ich als <strong>IT-Consultant bei ATOSS Software SE</strong> in
+                            Stuttgart und unterstütze Unternehmen dabei, individuelle IT-Lösungen effizient
+                            umzusetzen. Zuvor habe ich im März 2024 mein <strong>Informatikstudium</strong> erfolgreich
+                            abgeschlossen.
+                        </p>
+                        <p>
+                            Während des Studiums habe ich umfassende Kenntnisse in Web-Entwicklung, Web-Design,
+                            App-Entwicklung, Backend-Programmierung sowie IT-Security erworben. Heute kombiniere ich
+                            dieses technische Fundament mit praktischer Projekterfahrung, um Prozesse zu optimieren,
+                            Schnittstellen zu entwickeln und sichere, zukunftsfähige IT-Konzepte zu gestalten.
+                        </p>
+                        <a class="btn btn--primary" href="./docs/Lebenslauf Moritz Zucker.pdf"
+                            download="Lebenslauf Moritz Zucker">
+                            <svg class="icon"><use href="#i-download" /></svg> Kompletter Lebenslauf
+                        </a>
+                    </article>
 
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary" style="margin: 10px;">
-                        <a href="https://www.linkedin.com/in/moritz-zucker-9932a11a9/" style="color: white;"><i
-                                class="fa fa-linkedin"></i> LinkedIn</a>
-                    </button>
-                    <button type="button" class="btn btn-primary" style="margin: 10px;">
-                        <a href="https://github.com/MoritzZucker" style="color: white;"><i class="fa fa-github"></i>
-                            GitHub</a>
-                    </button>
-                    <button type="button" class="btn btn-primary" style="margin: 10px;">
-                        <a href="https://www.xing.com/profile/Moritz_Zucker" style="color: white;"><i
-                                class="fa fa-xing"></i> Xing</a>
-                    </button>
+                    <article class="card stat spotlight reveal">
+                        <span class="stat__value"><span class="counter" data-target="17">17</span>+</span>
+                        <span class="stat__label">Technologien &amp; Sprachen</span>
+                    </article>
+                    <article class="card stat spotlight reveal">
+                        <span class="stat__value">2024</span>
+                        <span class="stat__label">Abschluss Informatik</span>
+                    </article>
+                    <article class="card stat stat--accent spotlight reveal">
+                        <span class="stat__value">IT</span>
+                        <span class="stat__label">Consultant bei ATOSS Software SE</span>
+                    </article>
+                    <article class="card stat spotlight reveal">
+                        <span class="stat__value">STR</span>
+                        <span class="stat__label">Stuttgart, Deutschland</span>
+                    </article>
                 </div>
             </div>
         </section>
-        <footer>
+
+        <!-- JOURNEY -->
+        <section class="section" id="journey">
             <div class="container">
-                <p>&copy; 2024 Moritz Zucker. All rights reserved.</p>
-                <a href="./Impressum.html">Impressum</a>
+                <header class="section__head reveal">
+                    <span class="eyebrow">02 — Werdegang</span>
+                    <h2 class="section__title">Mein <span class="gradient-text">Weg</span></h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <span class="timeline__date">Seit Mai 2024</span>
+                        <div class="card spotlight">
+                            <h3>IT-Consultant</h3>
+                            <p class="timeline__org">ATOSS Software SE · Stuttgart</p>
+                            <p>Beratung und Umsetzung individueller IT-Lösungen – Prozessoptimierung,
+                                Schnittstellenentwicklung und sichere, zukunftsfähige IT-Konzepte.</p>
+                            <ul class="tags">
+                                <li>Consulting</li>
+                                <li>Schnittstellen</li>
+                                <li>Prozesse</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__date">Bis März 2024</span>
+                        <div class="card spotlight">
+                            <h3>Informatikstudium</h3>
+                            <p class="timeline__org">Erfolgreich abgeschlossen</p>
+                            <p>Schwerpunkte in Web-Entwicklung, Web-Design, App-Entwicklung,
+                                Backend-Programmierung und IT-Security.</p>
+                            <ul class="tags">
+                                <li>Web</li>
+                                <li>Apps</li>
+                                <li>Backend</li>
+                                <li>IT-Security</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
             </div>
-        </footer>
+        </section>
 
-        <script src="script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script> // When the user scrolls down 20px from the top of the document, show the button window.onscroll = function() {scrollFunction()}; function scrollFunction() { if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { document.getElementById("myBtn").style.display = "block"; } else { document.getElementById("myBtn").style.display = "none"; } } // When the user clicks on the button, scroll to the top of the document function topFunction() { document.body.scrollTop = 0; // For Safari document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera } </script>
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">03 — Skills</span>
+                    <h2 class="section__title">Mein <span class="gradient-text">Werkzeugkasten</span></h2>
+                </header>
 
+                <div class="skills">
+                    <article class="card skill-group spotlight reveal">
+                        <span class="skill-group__icon">&lt;/&gt;</span>
+                        <h3>Frontend</h3>
+                        <ul class="chips">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                        </ul>
+                    </article>
+                    <article class="card skill-group spotlight reveal">
+                        <span class="skill-group__icon">{ }</span>
+                        <h3>Backend</h3>
+                        <ul class="chips">
+                            <li>Node</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </article>
+                    <article class="card skill-group spotlight reveal">
+                        <span class="skill-group__icon">▢</span>
+                        <h3>Mobile</h3>
+                        <ul class="chips">
+                            <li>Dart</li>
+                            <li>Flutter</li>
+                            <li>React Native</li>
+                        </ul>
+                    </article>
+                    <article class="card skill-group spotlight reveal">
+                        <span class="skill-group__icon">#</span>
+                        <h3>Systemnah</h3>
+                        <ul class="chips">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>Compiler</li>
+                        </ul>
+                    </article>
+                    <article class="card skill-group skill-group--wide spotlight reveal">
+                        <span class="skill-group__icon">◎</span>
+                        <h3>Beratung</h3>
+                        <ul class="chips">
+                            <li>Consulting</li>
+                            <li>Prozessoptimierung</li>
+                            <li>Schnittstellen</li>
+                            <li>IT-Security</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">04 — Projekte</span>
+                    <h2 class="section__title">Ausgewählte <span class="gradient-text">Arbeiten</span></h2>
+                </header>
+
+                <div class="projects">
+                    <a class="project tilt reveal"
+                        href="https://docs.google.com/document/d/1rrr7jsDr8fyTUMrRKlcw5RwOvJT5G3P7xt-mlLRDHD4/edit?usp=sharing"
+                        target="_blank" rel="noopener">
+                        <div class="project__media">
+                            <img src="./pics/projects/fitness.webp" alt="Fitnessstudio App" loading="lazy"
+                                width="800" height="800">
+                        </div>
+                        <div class="project__body">
+                            <span class="project__index">01</span>
+                            <h3>Fitnessstudio App</h3>
+                            <p>App zur Verwaltung von Fitnessstudios.</p>
+                            <ul class="tags">
+                                <li>App</li>
+                                <li>Mobile</li>
+                                <li>Konzept</li>
+                            </ul>
+                            <span class="project__link">Projekt ansehen <svg class="icon"><use href="#i-arrow" /></svg></span>
+                        </div>
+                        <span class="tilt__glare" aria-hidden="true"></span>
+                    </a>
+
+                    <a class="project tilt reveal" href="https://github.com/JulianTeschner/CasinoIP2" target="_blank"
+                        rel="noopener">
+                        <div class="project__media">
+                            <img src="./pics/projects/casino.webp" alt="Casino Website" loading="lazy" width="1200"
+                                height="628">
+                        </div>
+                        <div class="project__body">
+                            <span class="project__index">02</span>
+                            <h3>Casino</h3>
+                            <p>Casino-Website mit verschiedenen Spielen wie Blackjack, Slotmaschine usw.</p>
+                            <ul class="tags">
+                                <li>Web</li>
+                                <li>Games</li>
+                                <li>GitHub</li>
+                            </ul>
+                            <span class="project__link">Code ansehen <svg class="icon"><use href="#i-arrow" /></svg></span>
+                        </div>
+                        <span class="tilt__glare" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contact card reveal">
+                    <div class="contact__intro">
+                        <span class="eyebrow">05 — Kontakt</span>
+                        <h2 class="section__title">Lassen Sie uns <span class="gradient-text">sprechen</span>.</h2>
+                        <p>Sie haben ein Projekt, eine Frage oder möchten sich einfach vernetzen? Schreiben Sie mir –
+                            ich melde mich so schnell wie möglich zurück.</p>
+                        <ul class="contact__socials">
+                            <li><a href="https://www.linkedin.com/in/moritz-zucker-9932a11a9/" target="_blank"
+                                    rel="noopener"><svg class="icon"><use href="#i-linkedin" /></svg> LinkedIn</a></li>
+                            <li><a href="https://github.com/MoritzZucker" target="_blank" rel="noopener"><svg
+                                        class="icon"><use href="#i-github" /></svg> GitHub</a></li>
+                            <li><a href="https://www.xing.com/profile/Moritz_Zucker" target="_blank"
+                                    rel="noopener"><svg class="icon"><use href="#i-xing" /></svg> Xing</a></li>
+                        </ul>
+                    </div>
+
+                    <form class="form" id="contact-form" action="https://formspree.io/f/xrgwwbop" method="post">
+                        <div class="field">
+                            <input type="text" name="name" id="full-name" placeholder=" " autocomplete="name"
+                                required>
+                            <label for="full-name">Name</label>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" id="email" placeholder=" " autocomplete="email"
+                                required>
+                            <label for="email">E-Mail</label>
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">Nachricht</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--block">
+                            Nachricht senden <svg class="icon"><use href="#i-send" /></svg>
+                        </button>
+                        <p class="form__status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; <span id="year">2024</span> Moritz Zucker. Alle Rechte vorbehalten.</p>
+            <nav aria-label="Rechtliches">
+                <a href="./Impressum.html">Impressum</a>
+                <a href="#top">Nach oben ↑</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
